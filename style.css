@@ -1,0 +1,24 @@
+.line {
+  cursor: pointer;
+  position: relative;
+}
+
+.line:hover div::after {
+  display: block;
+}
+
+.line div::after {
+  display: none;
+  content: attr(money);
+  width: fit-content;
+  height: fit-content;
+  padding: 1vh;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transform: translate(-50%, -110%);
+}
+
