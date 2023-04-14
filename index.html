@@ -1,43 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expenses-chat</title>
 </head>
-<body>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="bg--red--light--8 d--flex justify--center">
+  <main class="w--full d--flex f--direction--column items--center mt--2 gap--1" style="max-width: 800px;">
+    <div class="w--10-12 bg--red--light--3 rounded--md p--1 d--flex items--center justify--space-between">
+      <article>
+        <h2 class="first--letter--transform--uppercase text--white text--sm" style="font-weight: 300;">my balance</h2>
+        <p class="text--white text--lg" style="font-weight: bold;">$921.48</p>
+      </article>
+      <img src="./images/logo.svg" alt="logo" class="w--auto h--12-12">
+    </div>
+    <section class="bg--white w--10-12 p--1 rounded--md d--flex f--direction--column items--center">
+      <h2 class="text--black d--flex w--full align--center"><span
+          class="first--letter--transform--uppercase d--block">spending</span>-<span
+          class="first--letter--transform--uppercase d--block">last 7 days</span></h2>
+      <div class="d--flex items--end gap--1 h--10 w--full">
+        <article class="h--4-12 col--12--xs col--5--sm col--3--xl d--flex f--direction--column items--end line">
+          <div class="w--full h--full bg--red--light--3 rounded--xs" money="50"></div>
+          <h3 class="text--gray align--center w--full" style="font-weight: 400;">mon</h3>
+        </article>
+        <article class="h--6-12 col--12--xs col--5--sm col--3--xl d--flex f--direction--column items--end line">
+          <div class="w--full h--full bg--red--light--3 rounded--xs" money="75"></div>
+          <h3 class="text--gray align--center w--full" style="font-weight: 400;">tue</h3>
+        </article>
+        <article class="h--8-12 col--12--xs col--5--sm col--3--xl d--flex f--direction--column items--end line">
+          <div class="w--full h--full bg--blue--light--3 rounded--xs" money="100"></div>
+          <h3 class="text--gray align--center w--full" style="font-weight: 400;">wed</h3>
+        </article>
+        <article class="h--6-12 col--12--xs col--5--sm col--3--xl d--flex f--direction--column items--end line">
+          <div class="w--full h--full bg--red--light--3 rounded--xs" money="75"></div>
+          <h3 class="text--gray align--center w--full" style="font-weight: 400;">thu</h3>
+        </article>
+        <article class="h--3-12 col--12--xs col--5--sm col--3--xl d--flex f--direction--column items--end line">
+          <div class="w--full h--full bg--red--light--3 rounded--xs" money="25"></div>
+          <h3 class="text--gray align--center w--full" style="font-weight: 400;">fri</h3>
+        </article>
+        <article class="h--6-12 col--12--xs col--5--sm col--3--xl d--flex f--direction--column items--end line">
+          <div class="w--full h--full bg--red--light--3 rounded--xs" money="75"></div>
+          <h3 class="text--gray align--center w--full" style="font-weight: 400;">sat</h3>
+        </article>
+        <article class="h--3-12 col--12--xs col--5--sm col--3--xl d--flex f--direction--column items--end line">
+          <div class="w--full h--full bg--red--light--3 rounded--xs" money="25"></div>
+          <h3 class="text--gray align--center w--full" style="font-weight: 400;">sun</h3>
+        </article>
+      </div>
+      <hr class="border--red--light--3 w--10-12 bg--red--light--3 my--1">
+      <div class="w--full d--flex justify--space-between">
+        <article>
+          <h3 class="first--letter--transform--uppercase text--gray align--left" style="font-weight: 400;">total this
+            month</h3>
+          <p class="text--black text--md align--left" style="font-weight: bold;">478.33</p>
+        </article>
+        <article class="d--flex f--direction--column justify--end">
+          <p class="text--black w--full align--right" style="font-weight: bold;">+2.4%</p>
+          <h3 class="text--gray align--right" style="font-weight: 400;">from last month</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
 </body>
+
 </html>
